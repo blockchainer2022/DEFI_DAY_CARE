@@ -88,7 +88,7 @@ const Mint = ({
               onClick={mintHandler}
               disabled={difference > 0 ? true : false}
             >
-              Mint
+              {account ? "Mint" : "Connect"}
             </MintButton>
           </div>
           <div className="text-primary mx-auto hidden md:block text-lg font-bold">
