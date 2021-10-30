@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         primary: "#49B064",
+        mintPrimary: "#C7C9BE",
         dark: "#131214",
       },
       container: {
@@ -19,7 +20,9 @@ module.exports = {
       fontFamily: {
         sans: ["Gluten", "cursive"],
       },
-      textColor: {},
+      textColor: {
+        primary: "#49B064",
+      },
     },
   },
   variants: {

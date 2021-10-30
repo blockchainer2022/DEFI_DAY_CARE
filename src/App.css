@@ -1,7 +1,37 @@
-body {
+.home {
   height: 100vh;
   background-image: url(./assets/images/Sandbox.png);
   background-size: cover;
   background-position: left top;
   text-align: center;
+}
+.mint-page {
+  min-height: 100vh;
+  flex-direction: column;
+
+  /* background-image: url(./assets/images/babies.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.rc-slider .rc-slider-rail {
+  background-color: white;
+  height: 6px;
+}
+.rc-slider .rc-slider-track {
+  background-color: #49b064;
+  height: 6px;
+}
+.rc-slider .rc-slider-handle {
+  background-color: #49b064;
+  border-color: #49b064;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+body .rc-slider-tooltip-inner {
+  background-color: #49b064;
+}
+body .rc-slider-tooltip-content .rc-slider-tooltip-arrow {
+  border-top-color: #49b064;
 }
