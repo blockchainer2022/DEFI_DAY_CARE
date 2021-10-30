@@ -76,7 +76,7 @@ const Mint = ({
         <div className="grid grid-cols-1 justify-center items-center md:grid-cols-3   gap-4 mt-14 md:my-10">
           <div className="w-full  slider mx-auto">
             <div className="text-primary mx-auto flex justify-between mb-4 md:hidden font-bold">
-              <span>Available Balance</span>
+              <span>Available </span>
               <span>
                 {totalSupply}/{maxSupply}
               </span>
@@ -92,7 +92,7 @@ const Mint = ({
             </MintButton>
           </div>
           <div className="text-primary mx-auto hidden md:block text-lg font-bold">
-            {totalSupply}/{maxSupply} Available balance
+            {totalSupply}/{maxSupply} Available
           </div>
         </div>
         <div className="flex justify-between text-center text-lg mt-10 md:mt-20">
