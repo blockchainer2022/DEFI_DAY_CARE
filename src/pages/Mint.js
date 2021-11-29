@@ -24,7 +24,7 @@ const Mint = ({
   const [seconds, setSeconds] = useState(0);
   const [value, setValue] = useState(0);
   const difference =
-    +dayjs.utc("2021-11-30T11:07:00.000+0000", "YYYY-MM-DDTHH:mm:ss.000ZZ") -
+    +dayjs.utc("2021-10-30T11:07:00.000+0000", "YYYY-MM-DDTHH:mm:ss.000ZZ") -
     +new Date();
 
   useEffect(() => {
