@@ -81,7 +81,7 @@ const Mint = ({
                 {totalSupply}/{maxSupply}
               </span>
             </div>
-            <Slider min={0} max={15} defaultValue={1} handle={handle} />
+            <Slider min={0} max={10} defaultValue={1} handle={handle} />
           </div>
           <div>
             <MintButton
