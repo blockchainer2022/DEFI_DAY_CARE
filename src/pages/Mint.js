@@ -79,31 +79,28 @@ const Mint = ({
         >
           Go Back
         </Link>
-        <h1 className="text-center text-4xl pt-8 text-white">
+        <h1 className="text-center text-4xl pt-16 text-white">
           Join the Daycare!
         </h1>
-        <div className=" text-center  mt-4">
+        <div className=" text-center  mt-4 ">
           <div className="w-full  slider mx-auto">
             <div className="text-white mx-auto  text-lg font-bold">
-              Total DeFi Baby Minted {totalSupply}/{maxSupply}
+              Total DeFi Baby Minted {0}/{0}
             </div>
             <div className="max-w-sm mx-auto my-4">
               <Slider min={0} max={10} defaultValue={1} handle={handle} />
             </div>
             <div className="text-white mx-auto  text-lg font-bold">
-              Mint {value} DeFi Baby ({(displayPrice * value).toFixed(4)}) Ether
+              Mint {value} DeFi Baby ({(0 * value).toFixed(4)}) Ether
             </div>
           </div>
           <div>
-            <MintButton
-              onClick={mintHandler}
-              disabled={difference > 0 ? true : false}
-            >
+            <MintButton onClick={mintHandler} disabled={true}>
               {account ? "Mint" : "Connect"}
             </MintButton>
           </div>
         </div>
-        <div className="flex text-white justify-between text-center text-lg mt-10  w-full max-w-lg mx-auto">
+        {/* <div className="flex text-white justify-between text-center text-lg mt-10  w-full max-w-lg mx-auto">
           <div>
             <p>{days.toString().padStart(2, "0")}</p>
             <p>Days</p>
@@ -120,7 +117,7 @@ const Mint = ({
             <p>{seconds.toString().padStart(2, "0")}</p>
             <p>Seconds</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );

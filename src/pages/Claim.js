@@ -104,7 +104,7 @@ const Claim = ({
               {/* {account ? "Mint" : "Connect"} */}
             </button>
             <p className="text-white text-lg max-w-sm w-full mx-auto mt-6">
-              Claiming Feature will be implemented upon fund deployment
+              Claiming Feature will be unlocked upon fund deployment
             </p>
           </div>
         </div>
