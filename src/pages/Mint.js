@@ -86,13 +86,13 @@ const Mint = ({
         <div className=" text-center  mt-4 ">
           <div className="w-full  slider mx-auto">
             <div className="text-white mx-auto  text-lg font-bold">
-              Total DeFi Baby Minted {0}/{0}
+              Total DeFi Baby Minted {0}/{9999}
             </div>
             <div className="max-w-sm mx-auto my-4">
               <Slider min={0} max={10} defaultValue={1} handle={handle} />
             </div>
             <div className="text-white mx-auto  text-lg font-bold">
-              Mint {value} DeFi Baby ({(0 * value).toFixed(4)}) Ether
+              Mint {value} DeFi Baby ({(0.09 * value).toFixed(4)}) Ether
             </div>
           </div>
           <div>
