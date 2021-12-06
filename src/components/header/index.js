@@ -4,9 +4,11 @@ const Index = () => {
   return (
     <header className="">
       <div className="container p-4">
-        <Button dark center={false} fsize={"xl"}>
-          {"Back to Homepage"}
-        </Button>
+        <a href="https://defidaycare.io/" target="_blank" rel="noreferrer">
+          <Button dark center={false} fsize={"xl"}>
+            {"Back to Homepage"}
+          </Button>
+        </a>
       </div>
     </header>
   );
