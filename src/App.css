@@ -2,7 +2,7 @@
   height: 100vh;
   background-image: url(./assets/images/Interior.jpg);
   background-size: cover;
-  background-position: left top;
+  background-position: center center;
   text-align: center;
 }
 .mint-page {
@@ -10,7 +10,7 @@
   flex-direction: column;
   background-color: #9dcff0;
   background-image: url(./assets/images/dirt.PNG);
-  background-position: center center;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
 }
