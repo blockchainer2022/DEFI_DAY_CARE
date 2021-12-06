@@ -97,7 +97,7 @@ const Claim = ({
           </div> */}
           <div>
             <button
-              className="bg-orange inline-block py-3 px-8  text-2xl uppercase rounded-lg border-2 border-white text-white mt-40"
+              className="bg-orange inline-block py-3 px-8  text-2xl uppercase rounded-lg border-2 border-white text-white mt-28"
               // onClick={mintHandler}
             >
               Claim Airdrop
