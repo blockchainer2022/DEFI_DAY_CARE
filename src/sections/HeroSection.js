@@ -10,7 +10,9 @@ const HeroSection = () => {
         <Link to="/mint">
           <Button>{"< mint now"}</Button>
         </Link>
-        <Button>{"claim rewards >"}</Button>
+        <Link to="/claim">
+          <Button>{"claim rewards >"}</Button>
+        </Link>
       </div>
     </section>
   );

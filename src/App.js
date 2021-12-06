@@ -10,6 +10,7 @@ import Mint from "./pages/Mint";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "react-toastify/dist/ReactToastify.css";
+import Claim from "./pages/Claim";
 toast.configure();
 function App() {
   const [chainId, setChainId] = useState(null);
@@ -186,6 +187,16 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/mint" exact>
             <Mint
+              account={account}
+              mint={mint}
+              totalSupply={totalSupply}
+              displayPrice={displayPrice}
+              loadWeb3={loadWeb3}
+              maxSupply={maxSupply}
+            />
+          </Route>
+          <Route path="/claim" exact>
+            <Claim
               account={account}
               mint={mint}
               totalSupply={totalSupply}

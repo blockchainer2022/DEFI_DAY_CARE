@@ -11,7 +11,7 @@ import customParseFormat from "dayjs/plugin/customParseFormat";
 dayjs.extend(utc);
 dayjs.extend(customParseFormat);
 
-const Mint = ({
+const Claim = ({
   account,
   mint,
   totalSupply,
@@ -71,7 +71,7 @@ const Mint = ({
     }
   };
   return (
-    <main className="bg-mintPrimary mint-page flex">
+    <main className="bg-mintPrimary mint-page flex claim">
       <div className="container md:px-40 flex-1">
         <Link
           to="/"
@@ -95,12 +95,12 @@ const Mint = ({
             </div>
           </div>
           <div>
-            <MintButton
+            <button
+              className="bg-orange inline-block py-3 px-8  text-2xl uppercase rounded-lg border-2 border-white text-white mt-6"
               onClick={mintHandler}
-              disabled={difference > 0 ? true : false}
             >
               {account ? "Mint" : "Connect"}
-            </MintButton>
+            </button>
           </div>
         </div>
         <div className="flex text-white justify-between text-center text-lg mt-10  w-full max-w-lg mx-auto">
@@ -126,4 +126,4 @@ const Mint = ({
   );
 };
 
-export default Mint;
+export default Claim;
