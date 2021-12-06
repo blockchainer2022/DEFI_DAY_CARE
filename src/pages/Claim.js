@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MintButton } from "../components/button";
+
 import { Link } from "react-router-dom";
 import Slider, { SliderTooltip } from "rc-slider";
 import "rc-slider/assets/index.css";
