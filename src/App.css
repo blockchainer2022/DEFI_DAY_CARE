@@ -15,6 +15,13 @@
   background-size: cover;
 }
 
+@media (max-width: 600px) {
+  .mint-page {
+    background-image: url(./assets/images/dirt.PNG);
+    background-size: contain;
+  }
+}
+
 .rc-slider .rc-slider-rail {
   background-color: white;
   height: 6px;

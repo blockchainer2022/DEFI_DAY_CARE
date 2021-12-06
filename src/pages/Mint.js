@@ -95,7 +95,7 @@ const Mint = ({
             {totalSupply}/{maxSupply} Available
           </div>
         </div>
-        <div className="flex justify-between text-center text-lg mt-10 md:mt-20">
+        <div className="flex text-white justify-between text-center text-lg mt-10 md:mt-20">
           <div>
             <p>{days.toString().padStart(2, "0")}</p>
             <p>Days</p>
