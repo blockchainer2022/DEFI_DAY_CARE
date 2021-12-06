@@ -10,7 +10,7 @@
   flex-direction: column;
   background-color: #9dcff0;
   background-image: url(./assets/images/dirt.PNG);
-  background-position: bottom left;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }

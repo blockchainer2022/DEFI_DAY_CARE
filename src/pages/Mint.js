@@ -72,15 +72,17 @@ const Mint = ({
   return (
     <main className="bg-mintPrimary mint-page flex">
       <div className="container md:px-40 flex-1">
-        <h1 className="text-center text-4xl pt-16">Join the Daycare!</h1>
+        <h1 className="text-center text-4xl pt-16 text-white">
+          Join the Daycare!
+        </h1>
         <div className="grid grid-cols-1 justify-center items-center md:grid-cols-3   gap-4 mt-14 md:my-10">
           <div className="w-full  slider mx-auto">
-            <div className="text-white mx-auto flex justify-between mb-4 md:hidden font-bold">
+            {/* <div className="text-white mx-auto flex justify-between mb-4 md:hidden font-bold">
               <span>Available </span>
               <span>
                 {totalSupply}/{maxSupply}
               </span>
-            </div>
+            </div> */}
             <Slider min={0} max={10} defaultValue={1} handle={handle} />
           </div>
           <div>
@@ -91,7 +93,7 @@ const Mint = ({
               {account ? "Mint" : "Connect"}
             </MintButton>
           </div>
-          <div className="text-white mx-auto hidden md:block text-lg font-bold">
+          <div className="text-white mx-auto  text-lg font-bold">
             {totalSupply}/{maxSupply} Available
           </div>
         </div>
