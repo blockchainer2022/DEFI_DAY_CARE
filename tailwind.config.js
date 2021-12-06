@@ -8,6 +8,7 @@ module.exports = {
         mintPrimary: "#C7C9BE",
         dark: "#131214",
         sky: "#9dcff0",
+        orange: "#ee8454",
       },
       container: {
         center: true,

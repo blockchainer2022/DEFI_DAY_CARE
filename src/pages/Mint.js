@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MintButton } from "../components/button";
+import { Link } from "react-router-dom";
 import Slider, { SliderTooltip } from "rc-slider";
 import "rc-slider/assets/index.css";
 // import Image from "../assets/images/dirt.PNG";
@@ -72,18 +73,26 @@ const Mint = ({
   return (
     <main className="bg-mintPrimary mint-page flex">
       <div className="container md:px-40 flex-1">
-        <h1 className="text-center text-4xl pt-16 text-white">
+        <Link
+          to="/"
+          className="bg-orange inline-block py-3 px-6 rounded-full text-white mt-6"
+        >
+          Go Back
+        </Link>
+        <h1 className="text-center text-4xl pt-8 text-white">
           Join the Daycare!
         </h1>
-        <div className="grid grid-cols-1 justify-center items-center md:grid-cols-3   gap-4 mt-14 md:my-10">
+        <div className=" text-center  mt-4">
           <div className="w-full  slider mx-auto">
-            {/* <div className="text-white mx-auto flex justify-between mb-4 md:hidden font-bold">
-              <span>Available </span>
-              <span>
-                {totalSupply}/{maxSupply}
-              </span>
-            </div> */}
-            <Slider min={0} max={10} defaultValue={1} handle={handle} />
+            <div className="text-white mx-auto  text-lg font-bold">
+              Total Baby Minted {totalSupply}/{maxSupply}
+            </div>
+            <div className="max-w-sm mx-auto my-4">
+              <Slider min={0} max={10} defaultValue={1} handle={handle} />
+            </div>
+            <div className="text-white mx-auto  text-lg font-bold">
+              Mint {value} Baby ({(displayPrice * value).toFixed(4)}) Ether
+            </div>
           </div>
           <div>
             <MintButton
@@ -93,11 +102,8 @@ const Mint = ({
               {account ? "Mint" : "Connect"}
             </MintButton>
           </div>
-          <div className="text-white mx-auto  text-lg font-bold">
-            {totalSupply}/{maxSupply} Available
-          </div>
         </div>
-        <div className="flex text-white justify-between text-center text-lg mt-10 md:mt-20">
+        <div className="flex text-white justify-between text-center text-lg mt-10  w-full max-w-lg mx-auto">
           <div>
             <p>{days.toString().padStart(2, "0")}</p>
             <p>Days</p>

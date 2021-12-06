@@ -21,6 +21,9 @@
     /* background-size: ; */
     background-size: 100%;
   }
+  .home {
+    background-image: url(./assets/images/Interior-mobile.jpg);
+  }
 }
 
 .rc-slider .rc-slider-rail {
