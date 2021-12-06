@@ -97,7 +97,8 @@ const Mint = ({
           </div>
           <div>
             <MintButton onClick={mintHandler} disabled={true}>
-              {account ? "Mint" : "Connect"}
+              {/* {account ? "Mint" : "Connect"} */}
+              Mint
             </MintButton>
           </div>
         </div>
