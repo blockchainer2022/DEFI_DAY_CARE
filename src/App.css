@@ -8,7 +8,7 @@
 .mint-page {
   min-height: 100vh;
   flex-direction: column;
-
+  background-color: #9dcff0;
   background-image: url(./assets/images/dirt.PNG);
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -27,18 +27,18 @@
   height: 6px;
 }
 .rc-slider .rc-slider-track {
-  background-color: #49b064;
+  background-color: #ee8454;
   height: 6px;
 }
 .rc-slider .rc-slider-handle {
-  background-color: #49b064;
-  border-color: #49b064;
+  background-color: #ee8454;
+  border-color: #ee8454;
   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 body .rc-slider-tooltip-inner {
-  background-color: #49b064;
+  background-color: #ee8454;
 }
 body .rc-slider-tooltip-content .rc-slider-tooltip-arrow {
-  border-top-color: #49b064;
+  border-top-color: #ee8454;
 }

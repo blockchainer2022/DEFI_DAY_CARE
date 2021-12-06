@@ -27,10 +27,10 @@ export const MintButton = ({
 }) => (
   <button
     {...props}
-    className={`py-2 md:py-3  px-6  md:px-8  mt-6 block mx-auto bg-mintPrimary   border-2  text-md ${fsize} rounded  uppercase shadow-xl ${
+    className={`py-2 md:py-3  px-6  md:px-8  mt-6 block mx-auto bg-sky   border-2  text-md ${fsize} rounded  uppercase shadow-xl ${
       disabled
         ? "cursor-default text-gray-400 pointer-events-none border-gray-400 select-none"
-        : "text-primary border-gray-900 "
+        : "text-primary border-white"
     }`}
   >
     {children}

@@ -7,6 +7,7 @@ module.exports = {
         primary: "#49B064",
         mintPrimary: "#C7C9BE",
         dark: "#131214",
+        sky: "#9dcff0",
       },
       container: {
         center: true,
@@ -22,6 +23,7 @@ module.exports = {
       },
       textColor: {
         primary: "#49B064",
+        sky: "#9dcff0",
       },
     },
   },
