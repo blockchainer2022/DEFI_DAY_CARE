@@ -26,6 +26,7 @@
   .mint-page.claim {
     background-image: url(./assets/images/Colorful\ sandbox.JPG);
     background-size: cover;
+    background-position: center center;
   }
   .home {
     background-image: url(./assets/images/Interior-mobile.jpg);
