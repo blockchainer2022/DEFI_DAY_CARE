@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { MintButton } from "../components/button";
 import { Link } from "react-router-dom";
