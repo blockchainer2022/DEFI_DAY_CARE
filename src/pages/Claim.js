@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
@@ -79,11 +80,11 @@ const Claim = ({
         >
           Go Back
         </Link>
-        <h1 className="text-center text-4xl pt-8 text-white">
+        {/* <h1 className="text-center text-4xl pt-8 text-white">
           Join the Daycare!
-        </h1>
+        </h1> */}
         <div className=" text-center  mt-4">
-          <div className="w-full  slider mx-auto">
+          {/* <div className="w-full  slider mx-auto">
             <div className="text-white mx-auto  text-lg font-bold">
               Total Baby Minted {totalSupply}/{maxSupply}
             </div>
@@ -93,17 +94,21 @@ const Claim = ({
             <div className="text-white mx-auto  text-lg font-bold">
               Mint {value} Baby ({(displayPrice * value).toFixed(4)}) Ether
             </div>
-          </div>
+          </div> */}
           <div>
             <button
-              className="bg-orange inline-block py-3 px-8  text-2xl uppercase rounded-lg border-2 border-white text-white mt-6"
-              onClick={mintHandler}
+              className="bg-orange inline-block py-3 px-8  text-2xl uppercase rounded-lg border-2 border-white text-white mt-40"
+              // onClick={mintHandler}
             >
-              {account ? "Mint" : "Connect"}
+              Claim Airdrop
+              {/* {account ? "Mint" : "Connect"} */}
             </button>
+            <p className="text-white text-lg max-w-sm w-full mx-auto mt-6">
+              Claiming Feature will be implemented upon fund deployment
+            </p>
           </div>
         </div>
-        <div className="flex text-white justify-between text-center text-lg mt-10  w-full max-w-lg mx-auto">
+        {/* <div className="flex text-white justify-between text-center text-lg mt-10  w-full max-w-lg mx-auto">
           <div>
             <p>{days.toString().padStart(2, "0")}</p>
             <p>Days</p>
@@ -120,7 +125,7 @@ const Claim = ({
             <p>{seconds.toString().padStart(2, "0")}</p>
             <p>Seconds</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );

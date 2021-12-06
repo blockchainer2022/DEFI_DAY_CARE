@@ -11,7 +11,7 @@ const HeroSection = () => {
           <Button>{"< mint now"}</Button>
         </Link>
         <Link to="/claim">
-          <Button>{"claim rewards >"}</Button>
+          <Button>{"claim Airdrops >"}</Button>
         </Link>
       </div>
     </section>
