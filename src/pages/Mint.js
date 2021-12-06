@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { MintButton } from "../components/button";
 import Slider, { SliderTooltip } from "rc-slider";
 import "rc-slider/assets/index.css";
-import Image from "../assets/images/babies.png";
+// import Image from "../assets/images/dirt.PNG";
 import * as dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import customParseFormat from "dayjs/plugin/customParseFormat";
@@ -70,7 +70,7 @@ const Mint = ({
     }
   };
   return (
-    <main className="bg-mintPrimary mint-page flex ">
+    <main className="bg-mintPrimary mint-page flex">
       <div className="container md:px-40 flex-1">
         <h1 className="text-center text-4xl pt-16">Join the Daycare!</h1>
         <div className="grid grid-cols-1 justify-center items-center md:grid-cols-3   gap-4 mt-14 md:my-10">
@@ -114,9 +114,9 @@ const Mint = ({
           </div>
         </div>
       </div>
-      <div className="w-full ">
+      {/* <div className="w-full ">
         <img src={Image} alt="" className="w-full" />
-      </div>
+      </div> */}
     </main>
   );
 };

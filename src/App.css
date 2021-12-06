@@ -1,6 +1,6 @@
 .home {
   height: 100vh;
-  background-image: url(./assets/images/Sandbox.png);
+  background-image: url(./assets/images/Interior.jpg);
   background-size: cover;
   background-position: left top;
   text-align: center;
@@ -9,10 +9,10 @@
   min-height: 100vh;
   flex-direction: column;
 
-  /* background-image: url(./assets/images/babies.png);
+  background-image: url(./assets/images/dirt.PNG);
   background-position: bottom left;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 
 .rc-slider .rc-slider-rail {
