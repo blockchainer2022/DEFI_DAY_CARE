@@ -86,19 +86,18 @@ const Mint = ({
         <div className=" text-center  mt-4 ">
           <div className="w-full  slider mx-auto">
             <div className="text-white mx-auto  text-lg font-bold">
-              Total DeFi Baby Minted {0}/{9999}
+              Total DeFi Baby Minted {totalSupply}/{maxSupply}
             </div>
             <div className="max-w-sm mx-auto my-4">
               <Slider min={0} max={9} defaultValue={1} handle={handle} />
             </div>
             <div className="text-white mx-auto  text-lg font-bold">
-              Mint {value} DeFi Baby ({(0.09 * value).toFixed(4)}) Ether
+              Mint {value} DeFi Baby ({(displayPrice * value).toFixed(4)}) Ether
             </div>
           </div>
           <div>
-            <MintButton onClick={mintHandler} disabled={true}>
-              {/* {account ? "Mint" : "Connect"} */}
-              Mint
+            <MintButton onClick={mintHandler}>
+              {account ? "Mint" : "Connect"}
             </MintButton>
           </div>
         </div>
