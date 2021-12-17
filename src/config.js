@@ -118,13 +118,6 @@ export const contractAbi = [
     type: "function",
   },
   {
-    inputs: [],
-    name: "PRESALE_RESERVED",
-    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
     inputs: [
       { internalType: "address", name: "to", type: "address" },
       { internalType: "uint256", name: "tokenId", type: "uint256" },
@@ -370,4 +363,4 @@ export const contractAbi = [
   },
 ];
 // export const contractAddress = "0xD73eE48F78da0B851892A60772acC9d0218374FE";
-export const contractAddress = "0xf59f85DC945f7f9305dA8d3e37F8ac6420cC3340";
+export const contractAddress = "0x2df26Ee984DEDdbd7C186aaAc570B53C6D190c94";

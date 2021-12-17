@@ -78,7 +78,7 @@ function App() {
     // you are connected to main net
     // Please connect to main net
 
-    if (chainId === 4) {
+    if (chainId === 1) {
       toast(`You are connected to main net`, {
         type: "success",
         position: toast.POSITION.BOTTOM_CENTER,
@@ -135,7 +135,7 @@ function App() {
 
   async function mint(mintCount) {
     if (contract) {
-      if (chainId === 4) {
+      if (chainId === 1) {
         if (mintCount === 0) {
           setLessMintAmountAlert(true);
         } else {
