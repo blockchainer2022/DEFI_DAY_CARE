@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { MintButton } from "../components/button";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Slider, { SliderTooltip } from "rc-slider";
 import "rc-slider/assets/index.css";
 // import Image from "../assets/images/dirt.PNG";
@@ -74,12 +74,14 @@ const Mint = ({
   return (
     <main className="bg-mintPrimary mint-page flex">
       <div className="container md:px-40 flex-1">
-        <Link
-          to="/"
+        <a
+          href="https://defidaycare.io/"
+          target="_blank"
+          rel="noreferrer"
           className="bg-orange inline-block py-3 px-6 rounded-full text-white mt-6"
         >
           Go Back
-        </Link>
+        </a>
         <h1 className="text-center text-4xl pt-16 text-white">
           Join the Daycare!
         </h1>

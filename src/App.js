@@ -5,12 +5,12 @@ import { contractAbi, contractAddress } from "./config";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { InformationModal, ConfirmationLoadingPopup } from "./components";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Mint from "./pages/Mint";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "react-toastify/dist/ReactToastify.css";
-import Claim from "./pages/Claim";
+// import Claim from "./pages/Claim";
 toast.configure();
 function App() {
   const [chainId, setChainId] = useState(null);
@@ -184,8 +184,8 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/mint" exact>
+          {/* <Route path="/" exact component={Home} /> */}
+          <Route path="/" exact>
             <Mint
               account={account}
               mint={mint}
@@ -195,7 +195,7 @@ function App() {
               maxSupply={maxSupply}
             />
           </Route>
-          <Route path="/claim" exact>
+          {/* <Route path="/claim" exact>
             <Claim
               account={account}
               mint={mint}
@@ -204,7 +204,7 @@ function App() {
               loadWeb3={loadWeb3}
               maxSupply={maxSupply}
             />
-          </Route>
+          </Route> */}
         </Switch>
       </div>
       <InformationModal
